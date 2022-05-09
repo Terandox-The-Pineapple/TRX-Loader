@@ -7,7 +7,7 @@ function init()
 	io.write("Choose Number: ")
 	local target = tonumber(read())
 	if target==1 then
-		initStorage()
+		--initStorage()
 	elseif target == 2 then
 		initMiningSystem()
 	else
@@ -23,7 +23,7 @@ function initMiningSystem()
 	io.write("Choose Number: ")
 	local target = tonumber(read())
 	if target == 1 then
-		shell.run("pastebin get qqRYGimt TRX-Miner")
+		shell.run("wget https://raw.githubusercontent.com/Terandox-The-Pineapple/TRX-Miner/main/TRX-Miner.lua TRX-Miner")
 		shell.run("TRX-Miner")
 	else
 		print("Input Invalid")
