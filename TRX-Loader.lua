@@ -6,8 +6,8 @@ function init()
 	print("-------------------------")
 	io.write("Choose Number: ")
 	local target = tonumber(read())
-	if target==1 then
-		--initStorage()
+	if target == 1 then
+		initStorage()
 	elseif target == 2 then
 		initMiningSystem()
 	else
@@ -39,14 +39,14 @@ function initStorage()
 	print("-------------------------")
 	io.write("Choose Number: ")
 	local target = tonumber(read())
-	if target==1 then
-		shell.run("pastebin get https://pastebin.com/7pZUAgDy startup")
+	if target == 1 then
+		shell.run("wget https://raw.githubusercontent.com/Terandox-The-Pineapple/TRX-Storage/main/Server.lua startup")
 		shell.run("reboot")
-	elseif target==2 then
-		shell.run("pastebin get https://pastebin.com/KvJUYPip startup")
+	elseif target == 2 then
+		shell.run("wget https://raw.githubusercontent.com/Terandox-The-Pineapple/TRX-Storage/main/Handheld.lua startup")
 		shell.run("reboot")
-	elseif target==3 then
-		shell.run("pastebin get https://pastebin.com/XeYSaY2K startup")
+	elseif target == 3 then
+		shell.run("wget https://raw.githubusercontent.com/Terandox-The-Pineapple/TRX-Storage/main/Turtle.lua startup")
 		shell.run("reboot")
 	else
 		print("Input Invalid")
